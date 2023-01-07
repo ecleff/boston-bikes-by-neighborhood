@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    <title>Hello world!</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+    
+    <!--     import all vega-lite required packages -->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.22.1"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.6.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.21.0"></script>
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <!-- this is the start of content -->
+    <h1 class='title'>
+      Biker Profiles by Neighborhood: Boston
+    </h1>
+    <div class='main-text'>
+      For those brave enough to share the Boston roadways with its frighteningly chaotic drivers, biking is a great way to zip around the city.
+      This project explores and compares trip characteristics between bikers using BlueBikes coming from Boston, Brookline, Cambridge, and Somerville.
+      <p>
+        The first plot displays trips along parallel coordinates, starting from the time a trip starts, to how long the trip takes, to what time it ends, and finally, if it ended up in the same district that it started in.
+        Trips that end in the same district as their origin end on top, while the trips that end in a different district end on the bottom.
+    
+      </p>
+      <p>
+        The second plot represents the distribution of trips by their duration. Trip duration was capped at 70 minutes for scale purposes (there were few but extreme outliers).
+      </p>
+        <p>
+        This project uses a representative sample of BlueBikes trips (500 trips) during October 2022 from the <a href="https://www.bluebikes.com/system-data"> BlueBikes System Data portal </a>.
+      </p>
+      <p>
+        <b> Instructions </b>    </p>
+      <p> Select an origin district from the drop-down menu below. Happy exploring!</p>
+      
+    </div>
+    <div id="vis">
+    </div>
+  
+    
+  </body>
+</html>
